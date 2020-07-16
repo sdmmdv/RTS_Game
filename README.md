@@ -24,7 +24,7 @@ Add following path to VM options : ```-Djava.library.path="path/to/lwjgl/libs"``
 
 (system: known as the proper game who “controls” the enemies)
 
-PLAYER. Functions:
+#### PLAYER. Functions:
 
 	1) Open Game: click the button to open the game and show the menu with the different levels.
 	2) Select Level: choose the level to play
@@ -37,7 +37,7 @@ PLAYER. Functions:
 			3.2.1)  What happens if the player doesn’t have enough money to upgrade a tower
 			3.2.2) What happens if the player doesn’t have enough XP to upgrade a tower
 
-SYSTEM. Functions:
+#### SYSTEM. Functions:
 	
 	1)  Show the level menu: when the game is opened by the player, the game should display the menu with the five different levels that can be played.
 
@@ -50,7 +50,7 @@ SYSTEM. Functions:
  	
 	4) Make the enemies appear and attack the main tower
 
-CHARACTERS:
+##### CHARACTERS:
 
 - Towers: 
  1) Archer: 
