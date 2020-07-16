@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="triple_s" default="jar" basedir=".">
+    <description>Builds, tests, and runs the project triple_s.</description>
+
+    <path id="external.libraries">
+        <fileset dir="libs">
+            <include name="**/*.jar"/>
+        </fileset>
+        <pathelement location="src"/>
+    </path>
+
+    <target name="clean">
+        <delete file="triple_s.jar"/>
+        <delete dir="out"/>
+    </target>
+
+    <target name="compile" depends="clean">
+        <mkdir dir="out/production/triple_s"/>
+        <javac srcdir="src"
+               destdir="out/production/triple_s"
+               includeantruntime="false">
+            <classpath>
+                <path refid="external.libraries" />
+            </classpath>
+        </javac>
+    </target>
+
+    <target name="test" depends="compile">
+        <junit printsummary="on" haltonfailure="yes" fork="true">
+            <classpath>
+                <path refid="external.libraries"/>
+                <pathelement location="out/production/triple_s"/>
+            </classpath>
+            <formatter type="brief" usefile="false" />
+            <batchtest>
+                <fileset dir="src" includes="**/*Test.java" />
+            </batchtest>
+        </junit>
+    </target>
+
+    <target name="jar" depends="test">
+        <jar destfile="triple_s.jar" basedir="out/production/triple_s">
+            <manifest>
+                <attribute name="Main-Class" value="game.Game"/>
+            </manifest>
+        </jar>
+    </target>
+
+
+</project>
