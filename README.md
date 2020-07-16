@@ -18,7 +18,7 @@ Add following path to VM options : ```-Djava.library.path="path/to/lwjgl/libs"``
 
 
 
-## USE CASES
+### USE CASES
 
 - Actors: player, system
 
