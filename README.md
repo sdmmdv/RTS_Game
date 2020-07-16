@@ -1,9 +1,24 @@
 # TRIPLE S – TOWER DEFENCE
-# Java RTS_Game Group Project
+## Java RTS_Game Group Project
+
+
+## General Info
+
+Tower defense (TD) is a subgenre of strategy video game where the goal is to defend a player's territories or possessions by obstructing the enemy attackers, usually achieved by placing defensive structures on or along their path of attack.[1] This typically means building a variety of different structures that serve to automatically block, impede, attack or destroy enemies. Tower defense is seen as a subgenre of real-time strategy video games, due to its real-time origins,[2][3] though many modern tower defense games include aspects of turn-based strategy. Strategic choice and positioning of defensive elements is an essential strategy of the genre.
+
+## Configuration / Build
+
+Open the project in Intellij IDEA/ Eclipse
+
+Add external libraries in ```/"libs"```
+
+Add following path to VM options : ```-Djava.library.path="path/to/lwjgl/libs"```
 
 
 
-USE CASES
+
+
+## USE CASES
 
 - Actors: player, system
 
