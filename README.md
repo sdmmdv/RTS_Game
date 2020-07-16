@@ -50,7 +50,7 @@ Add following path to VM options : ```-Djava.library.path="path/to/lwjgl/libs"``
  	
 	4) Make the enemies appear and attack the main tower
 
-##### CHARACTERS:
+#### CHARACTERS:
 
 - Towers: 
  1) Archer: 
@@ -77,7 +77,7 @@ Add following path to VM options : ```-Djava.library.path="path/to/lwjgl/libs"``
 
 
 
-- As a player, I want to open the game
+##### - As a player, I want to open the game
 
 GIVEN	The open game button
 
@@ -86,7 +86,7 @@ WHEN	The player clicks on the button with the mouse
 THEN	The program gets opened and the menu level is shown
 
 
-- As a player, I want to select a level
+##### - As a player, I want to select a level
 
 GIVEN	A level menu
 
@@ -95,7 +95,7 @@ WHEN	The player selects a level
 THEN	The level gets opened allowing the player to play
 
  
-- As a player, I want to play a level
+##### - As a player, I want to play a level
 
 GIVEN	A level scenario
 
@@ -104,7 +104,7 @@ WHEN	The player clicks on the start button
 THEN	The level gets started and the game begins
 
 
-- As a player, I want to construct a tower
+##### - As a player, I want to construct a tower
 
 GIVEN	A tower menu and an amount of money
 
@@ -128,7 +128,7 @@ WHEN	The player tries to build a tower in a not allowed location
 THEN	A message is shown in the screen to advice the player to ask for another location
 
 
-- As a player, I want to upgrade a tower
+##### - As a player, I want to upgrade a tower
 
 GIVEN	A built tower, XP and money
 
@@ -151,7 +151,7 @@ WHEN	The player doesn’t have enough money
 THEN	A message is shown in the screen to advice the player that he has to earn more money to upgrade the tower
 
 
-- As the system, I want to show the level menu
+##### - As the system, I want to show the level menu
 
 GIVEN	An open game button
 
@@ -160,7 +160,7 @@ WHEN	The player clicks that button
 THEN	The level menu is displayed in the screen
 
 
-- As the system, I want to charge a level
+##### - As the system, I want to charge a level
 
 GIVEN	A level menu
 
@@ -169,7 +169,7 @@ WHEN	The player selects the level he wants to play
 THEN	The system displays the scenario for the selected level, decides the type of enemies that are going to appear in that level and calculates how often are they going to appear, their walking speed and the damage they can make to the main tower.
 
 
-- As the system, I want to make the player’s towers shoot automatically
+##### - As the system, I want to make the player’s towers shoot automatically
 
 GIVEN	The player asks to the system to build a tower
 
@@ -192,7 +192,7 @@ WHEN	The tower vanish an enemy
 THEN	The enemy disappears and the XP of the player increases
 
 
-- As the system, I want to make the enemies appear and attack the main tower
+##### - As the system, I want to make the enemies appear and attack the main tower
 
 GIVEN	The scenario of a level
 
