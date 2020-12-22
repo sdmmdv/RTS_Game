@@ -1,29 +1,30 @@
-# TRIPLE S – TOWER DEFENCE
-## Java RTS_Game Group Project
-
+# Java RTS_Game – TRIPLE_S TOWER DEFENCE
 
 ## General Info
 
-Tower defense (TD) is a subgenre of strategy video game where the goal is to defend a player's territories or possessions by obstructing the enemy attackers, usually achieved by placing defensive structures on or along their path of attack.[1] This typically means building a variety of different structures that serve to automatically block, impede, attack or destroy enemies. Tower defense is seen as a subgenre of real-time strategy video games, due to its real-time origins,[2][3] though many modern tower defense games include aspects of turn-based strategy. Strategic choice and positioning of defensive elements is an essential strategy of the genre.
+Tower defense is a subgenre of strategy video game where the goal is to defend a player's territories or possessions by obstructing the enemy attackers, usually achieved by placing defensive structures on or along their path of attack.This typically means building a variety of different structures that serve to automatically block, impede, attack or destroy enemies. Tower defense is seen as a subgenre of real-time strategy video games, due to its real-time origins though many modern tower defense games include aspects of turn-based strategy.
 
 ## Configuration / Build
 
-Open the project in Intellij IDEA/ Eclipse
+1. Import the project in Intellij IDEA
+2. Under <em>Project Structure</em> settings, for the SDK field choose **1.8 java version "1.8.XXX"**
+3. Go to the modules, make sure all the dependencies exported.
+Libraries repository displayed as the **libs**, tick off and apply.
+If not available export libraries manually from ```/"libs"```
+4. Open <em>Edit Configuration</em>, choose main class as <em>Game.game</em>
+5. Add following path to <em>VM options</em> : ```-Djava.library.path="/Full_Path_to_the_libs_folder"```
 
-Add external libraries in ```/"libs"```
+## Screenshots
 
-Add following path to VM options : ```-Djava.library.path="path/to/lwjgl/libs"```
+**Home**                         |  **Menu**
+:-------------------------------:|:---------------------------------:
+![Home](https://github.com/MoneiBall/RTS_Game/blob/master/res/screenshots/home.png)  |  ![Menu](https://github.com/MoneiBall/RTS_Game/blob/master/res/screenshots/menu.png)
+**Twilight 1**                      |  **Twilight 2**
+![Twilight 1](https://github.com/MoneiBall/RTS_Game/blob/master/res/screenshots/twilight.png)  |  ![Twilight 2](https://github.com/MoneiBall/RTS_Game/blob/master/res/screenshots/twilight-electro.png)
+**Woodlands**                       |  **Tundra**
+![Woodlands](https://github.com/MoneiBall/RTS_Game/blob/master/res/screenshots/woodlands.png)  |  ![Tundra](https://github.com/MoneiBall/RTS_Game/blob/master/res/screenshots/tundra.png)
 
-
-
-
-
-### USE CASES
-
-- Actors: player, system
-
-(system: known as the proper game who “controls” the enemies)
-
+## USE CASES
 #### PLAYER. Functions:
 
 	1) Open Game: click the button to open the game and show the menu with the different levels.
@@ -74,128 +75,13 @@ Add following path to VM options : ```-Djava.library.path="path/to/lwjgl/libs"``
  3) NutCracker: Medium Durability, High Speed
  4) HyperKid: Low Durability, High speed
  5) BioStrong: The Boss, High Durability, High Speed
-
-
-
-##### - As a player, I want to open the game
-
-GIVEN	The open game button
-
-WHEN	The player clicks on the button with the mouse
-
-THEN	The program gets opened and the menu level is shown
-
-
-##### - As a player, I want to select a level
-
-GIVEN	A level menu
-
-WHEN	The player selects a level
-
-THEN	The level gets opened allowing the player to play
-
  
-##### - As a player, I want to play a level
-
-GIVEN	A level scenario
-
-WHEN	The player clicks on the start button
-
-THEN	The level gets started and the game begins
-
-
-##### - As a player, I want to construct a tower
-
-GIVEN	A tower menu and an amount of money
-
-WHEN	The player selects a type of tower and an allowed location
-
-THEN	A tower of the selected type is constructed where the player asked to
-
-
-
-GIVEN	A tower menu and an amount of money
-
-WHEN	The player doesn’t have enough money
-
-THEN	A message is shown in the screen to advice the player to save more money first
-
-
-GIVEN	A tower menu and an amount of money
-
-WHEN	The player tries to build a tower in a not allowed location
-
-THEN	A message is shown in the screen to advice the player to ask for another location
-
-
-##### - As a player, I want to upgrade a tower
-
-GIVEN	A built tower, XP and money
-
-WHEN	The player gets enough XP and money
-
-THEN	The player can upgrade the attack and the damage of a tower
-
-
-GIVEN	A built tower, XP and money
-
-WHEN	The player doesn’t have enough XP
-
-THEN	A message is shown in the screen to advice the player that he has to kill more enemies to be allowed to earn more XP
-
-
-GIVEN	A built tower, XP and money
-
-WHEN	The player doesn’t have enough money
-
-THEN	A message is shown in the screen to advice the player that he has to earn more money to upgrade the tower
-
-
-##### - As the system, I want to show the level menu
-
-GIVEN	An open game button
-
-WHEN	The player clicks that button
-
-THEN	The level menu is displayed in the screen
-
-
-##### - As the system, I want to charge a level
-
-GIVEN	A level menu
-
-WHEN	The player selects the level he wants to play
-
-THEN	The system displays the scenario for the selected level, decides the type of enemies that are going to appear in that level and calculates how often are they going to appear, their walking speed and the damage they can make to the main tower.
-
-
-##### - As the system, I want to make the player’s towers shoot automatically
-
-GIVEN	The player asks to the system to build a tower
-
-WHEN	The tower is already built
-
-THEN	The system makes it shoot at the enemies who are in the tower’s rank according to the tower’s shooting frequency
-
-
-GIVEN	A built tower
-
-WHEN	The tower shoots to an enemy
-
-THEN	The HP of the enemies decreases, and the player gains money
-
-
-GIVEN	A built tower
-
-WHEN	The tower vanish an enemy
-
-THEN	The enemy disappears and the XP of the player increases
-
-
-##### - As the system, I want to make the enemies appear and attack the main tower
-
-GIVEN	The scenario of a level
-
-WHEN	The level gets started
-
-THEN	The enemies start to appear and walk to get to the main tower and attack it
+ ## References
+ * Java Documentation,
+ URL: https://docs.oracle.com/en/java .
+* LWJGL 3 Documentation,
+ URL: https://www.lwjgl.org/guide .
+* SLICK2D Documentation,
+ URL: https://slick.ninjacave.com/ .
+* Callum May, <em>“java-tower-defense” github public repository</em>,
+ URL: https://github.com/callumdmay/java-tower-defense .
