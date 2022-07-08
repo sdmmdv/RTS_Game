@@ -718,8 +718,8 @@ public class PlayMenu extends BasicGameState {
     /**
      * Sets the images of the map and restart the game.
      * Sets the buttons with the menu's options.
-     * @param container - container of the graphics
-     * @param sbg - game object
+     * @param gameContainer - container of the graphics
+     * @param stateBasedGame - game object
      * @throws SlickException
      */
     @Override
@@ -733,9 +733,9 @@ public class PlayMenu extends BasicGameState {
 
     /**
      * Refresh the graphics.
-     * @param container - container of the graphics
-     * @param sbg - game object
-     * @param g - graphics
+     * @param gameContainer - container of the graphics
+     * @param stateBasedGame - game object
+     * @param graphics - graphics
      * @throws SlickException
      */
     @Override

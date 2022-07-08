@@ -80,8 +80,8 @@ public class SettingsMenu extends BasicGameState {
     /**
      * Sets the images of the Settings menu.
      * Sets the buttons with the menu's options.
-     * @param container - container of the graphics
-     * @param sbg - game object
+     * @param gameContainer - container of the graphics
+     * @param stateBasedGame - game object
      * @throws SlickException
      */
     @Override
@@ -92,9 +92,9 @@ public class SettingsMenu extends BasicGameState {
 
     /**
      * Refresh the graphics.
-     * @param container - container of the graphics
-     * @param sbg - game object
-     * @param g - graphics
+     * @param gameContainer - container of the graphics
+     * @param stateBasedGame - game object
+     * @param graphics - graphics
      * @throws SlickException
      */
     @Override
@@ -106,8 +106,8 @@ public class SettingsMenu extends BasicGameState {
      * Detects if the Mouse is Clicked.
      * If true, calls to the following method giving it the coordinates.
      * @param container - container of the graphics
-     * @param sbg -  game object
-     * @param delta - time
+     * @param stateBasedGame -  game object
+     * @param i - delta time
      * @throws SlickException
      */
     @Override
@@ -127,7 +127,7 @@ public class SettingsMenu extends BasicGameState {
      * @param x - coordinate for width
      * @param y - coordinate for height
      * @param sbg - game object
-     * @param gc - container for the graphics
+     * @param container - container for the graphics
      * @throws SlickException
      */
     public void mouseClicked(int x, int y, StateBasedGame sbg, GameContainer container) throws SlickException, InterruptedException {
