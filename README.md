@@ -1,18 +1,21 @@
-# Java RTS_Game – TRIPLE_S TOWER DEFENCE
+# TOWER DEFENCE - Java RTS_GAME
 
-## General Info
+## About
 
 Tower defense is a subgenre of strategy video game where the goal is to defend a player's territories or possessions by obstructing the enemy attackers, usually achieved by placing defensive structures on or along their path of attack.This typically means building a variety of different structures that serve to automatically block, impede, attack or destroy enemies. Tower defense is seen as a subgenre of real-time strategy video games, due to its real-time origins though many modern tower defense games include aspects of turn-based strategy.
 
-## Configuration / Build
+## Downloads
 
-1. Import the project in Intellij IDEA
-2. Under <em>Project Structure</em> settings, for the SDK field choose **1.8 java version "1.8.XXX"**
-3. Go to the modules, make sure all the dependencies exported.
+Releases for Desktop are found on the [releases page](https://github.com/MoneiBall/RTS_Game/releases). Relase contains lwjgl OS natives (.os and .dll) and runnable .jar file. Must have JRE installed in your host machine.   
+
+## Configuration - Intellij IDEA
+
+1. Project compiled with jdk 1.8, so for the SDK field choose **1.8 java version "1.8.XXX"**
+2. Go to the modules, make sure all the dependencies exported.
 Libraries repository displayed as the **libs**, tick off and apply.
 If not available export libraries manually from ```/"libs"```
-4. Open <em>Edit Configuration</em>, choose main class as <em>Game.game</em>
-5. Add following path to <em>VM options</em> : ```-Djava.library.path="/Full_Path_to_the_libs_folder"```
+3. Open <em>Edit Configuration</em>, choose main class as <em>Game.game</em>
+4. Add following path to <em>VM options</em> : ```-Djava.library.path="<Full/Path/to/your/libs_folder>"```
 
 ## Screenshots
 
@@ -27,29 +30,29 @@ If not available export libraries manually from ```/"libs"```
 ## USE CASES
 #### PLAYER. Functions:
 
-	1) Open Game: click the button to open the game and show the menu with the different levels.
-	2) Select Level: choose the level to play
-	
-	3) Play level:
-		3.1) Construct tower by selecting its type and position
-			3.1.1) What happens if there’s not enough money to construct a tower
-			3.1.2) What happens if the player chooses a position where a tower cannot be built
-		3.2) Upgrade tower
-			3.2.1)  What happens if the player doesn’t have enough money to upgrade a tower
-			3.2.2) What happens if the player doesn’t have enough XP to upgrade a tower
+1) Open Game: click the button to open the game and show the menu with the different levels.
+2) Select Level: choose the level to play
+
+3) Play level:
+	3.1) Construct tower by selecting its type and position
+		3.1.1) What happens if there’s not enough money to construct a tower
+		3.1.2) What happens if the player chooses a position where a tower cannot be built
+	3.2) Upgrade tower
+		3.2.1)  What happens if the player doesn’t have enough money to upgrade a tower
+		3.2.2) What happens if the player doesn’t have enough XP to upgrade a tower
 
 #### SYSTEM. Functions:
 	
-	1)  Show the level menu: when the game is opened by the player, the game should display the menu with the five different levels that can be played.
+1)  Show the level menu: when the game is opened by the player, the game should display the menu with the five different levels that can be played.
 
-	2)  Charge level: when a level is selected the game shows a different page with the 		corresponded scenario. It also calculates the type of enemies the level is going to have, how are they going to appear, what is its walking speed and the damage they are going to make to the tower.
+2)  Charge level: when a level is selected the game shows a different page with the corresponded scenario. It also calculates the type of enemies the level is going to have, how are they going to appear, what is its walking speed and the damage they are going to make to the tower.
 
-	3) Make the player towers shoot automatically:
-		3.1)  Select how the tower is going to be upgraded
-		3.2) What happens when a tower shoots at an enemy.
-		3.3) What happens when a tower vanish an enemy.
- 	
-	4) Make the enemies appear and attack the main tower
+3) Make the player towers shoot automatically:
+	3.1)  Select how the tower is going to be upgraded
+	3.2) What happens when a tower shoots at an enemy.
+	3.3) What happens when a tower vanish an enemy.
+
+4) Make the enemies appear and attack the main tower
 
 #### CHARACTERS:
 
